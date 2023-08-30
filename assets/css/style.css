@@ -923,3 +923,10 @@ footer {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+
+.category-3d-modeling,
+.category-2d-animation,
+.category-3d-environment {
+  width: calc(33.33% - 15px); /* Ajusta el ancho según el diseño deseado */
+  margin-bottom: 30px;
+}
