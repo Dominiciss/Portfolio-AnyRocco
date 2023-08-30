@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Girly</title>
+  <title>Batmobile</title>
 </head>
 
 <body>
@@ -58,6 +58,7 @@
           </div>
           <div class="row single-blog">
             <div class="col-xl-12 col-lg-12 single-blog__img">
+              <div id="model-container"></div>
               <video id="panorama-video" autoplay loop>
                 <source src="assets/img/Batimovil/BATIMOBIL 3D.mp4" type="video/mp4">
                 Tu navegador no admite el elemento de video.
@@ -71,22 +72,8 @@
   <!-- Blog content section end -->
 
   <script>
-  const videoElement = document.getElementById('panorama-video');
-  const seekBar = document.getElementById('seek-bar');
 
-  videoElement.addEventListener('timeupdate', () => {
-    const currentTime = videoElement.currentTime;
-    const duration = videoElement.duration;
-    const progress = (currentTime / duration) * 100;
-    seekBar.value = progress;
-  });
 
-  seekBar.addEventListener('input', () => {
-    const progress = seekBar.value;
-    const duration = videoElement.duration;
-    const newTime = (progress / 100) * duration;
-    videoElement.currentTime = newTime;
-  });
   </script>
 
   <footer class="container-fluid p-0 pr-0">

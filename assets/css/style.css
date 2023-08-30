@@ -927,7 +927,7 @@ footer {
 .category-3d-modeling,
 .category-2d-animation,
 .category-3d-environment {
-  width: calc(33.33% - 15px); /* Ajusta el ancho según el diseño deseado */
+  /*width: calc(33.33% - 15px); /* Ajusta el ancho según el diseño deseado */
   margin-bottom: 30px;
 }
 
