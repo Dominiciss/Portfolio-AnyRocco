@@ -39,35 +39,27 @@
     <div class="blog-content-bckg">
       <div class="blog-content-inner">
         <div class="container-fluid">
-          <h2 class="card-title">Our latest blog news</h2>
+          <h2 class="card-title">Batimovils</h2>
           <div class="row single-blog">
-            <div class="col-xl-4 col-lg-12 single-blog__img">
-              <img class="card-img w-100" src="assets/img/girl3.jpg" alt="">
-            </div>
-            <div class="col-xl-8 col-lg-12 single-blog__text">
-              <h2>Lorem ipsum dolor sit amet</h2>
+            <div class="col-xl-12 col-lg-12 single-blog__text">
+              <h2>Personal Project</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus tempus lorem sollicitudin sagittis. Vestibulum eu placerat tortor. Sed eu magna quis sapien ultricies euismod. Quisque ligula erat, tempus porttitor sem ac, congue malesuada nunc. Vestibulum lobortis turpis quis nisl commodo, vel scelerisque nisl fermentum. Cras scelerisque lectus eget aliquet auctor. Curabitur vestibulum orci ante, in bibendum dolor euismod quis. Nullam nulla nisi, malesuada vitae accumsan ac, blandit eu dui. Pellentesque ut ligula ex. Donec lacinia eros et arcu rhoncus, sit amet vestibulum justo efficitur. Nulla facilisi. Integer a sem aliquet, dapibus ipsum eu, vehicula dui. Fusce id leo tellus. Ut eu accumsan arcu. Aliquam at vestibulum felis.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus tempus lorem sollicitudin sagittis. Vestibulum eu placerat tortor. Sed eu magna quis sapien ultricies euismod. Quisque ligula erat, tempus porttitor sem ac, congue malesuada nunc. Vestibulum lobortis turpis quis nisl commodo, vel scelerisque nisl fermentum. Cras scelerisque lectus eget aliquet auctor. Curabitur vestibulum orci ante, in bibendum dolor euismod quis.</p>
             </div>
           </div>
           <div class="row single-blog">
-            <div class="col-xl-4 col-lg-12 single-blog__img">
-              <img class="card-img w-100" src="assets/img/girl1.jpg" alt="">
+            <div class="col-xl-6 col-lg-12 single-blog__img">
+              <img class="card-img w-100" src="assets/img/Batimovil/BATIMOVIL.jpg" alt="">
             </div>
-            <div class="col-xl-8 col-lg-12 single-blog__text">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus tempus lorem sollicitudin sagittis. Vestibulum eu placerat tortor. Sed eu magna quis sapien ultricies euismod. Quisque ligula erat, tempus porttitor sem ac, congue malesuada nunc. Vestibulum lobortis turpis quis nisl commodo, vel scelerisque nisl fermentum. Cras scelerisque lectus eget aliquet auctor. Curabitur vestibulum orci ante, in bibendum dolor euismod quis. Nullam nulla nisi, malesuada vitae accumsan ac, blandit eu dui. Pellentesque ut ligula ex. Donec lacinia eros et arcu rhoncus, sit amet vestibulum justo efficitur. Nulla facilisi. Integer a sem aliquet, dapibus ipsum eu, vehicula dui. Fusce id leo tellus. Ut eu accumsan arcu. Aliquam at vestibulum felis.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus tempus lorem sollicitudin sagittis. Vestibulum eu placerat tortor. Sed eu magna quis sapien ultricies euismod. Quisque ligula erat, tempus porttitor sem ac, congue malesuada nunc. Vestibulum lobortis turpis quis nisl commodo, vel scelerisque nisl fermentum. Cras scelerisque lectus eget aliquet auctor. Curabitur vestibulum orci ante, in bibendum dolor euismod quis.</p>
+            <div class="col-xl-6 col-lg-12 single-blog__text">
+              <img class="card-img w-100" src="assets/img/Batimovil/BATIMOVIL2.jpg" alt="">
             </div>
           </div>
           <div class="row single-blog">
-            <div class="col-xl-4 col-lg-12 single-blog__img">
-              <img class="card-img w-100" src="assets/img/portfolio-img3.png" alt="">
-            </div>
-            <div class="col-xl-8 col-lg-12 single-blog__text">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus tempus lorem sollicitudin sagittis. Vestibulum eu placerat tortor. Sed eu magna quis sapien ultricies euismod. Quisque ligula erat, tempus porttitor sem ac, congue malesuada nunc. Vestibulum lobortis turpis quis nisl commodo, vel scelerisque nisl fermentum. Cras scelerisque lectus eget aliquet auctor. Curabitur vestibulum orci ante, in bibendum dolor euismod quis. Nullam nulla nisi, malesuada vitae accumsan ac, blandit eu dui. Pellentesque ut ligula ex. Donec lacinia eros et arcu rhoncus, sit amet vestibulum justo efficitur. Nulla facilisi. Integer a sem aliquet, dapibus ipsum eu, vehicula dui. Fusce id leo tellus. Ut eu accumsan arcu. Aliquam at vestibulum felis.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus tempus lorem sollicitudin sagittis. Vestibulum eu placerat tortor. Sed eu magna quis sapien ultricies euismod. Quisque ligula erat, tempus porttitor sem ac, congue malesuada nunc. Vestibulum lobortis turpis quis nisl commodo, vel scelerisque nisl fermentum. Cras scelerisque lectus eget aliquet auctor. Curabitur vestibulum orci ante, in bibendum dolor euismod quis.</p>
+            <div class="col-xl-12 col-lg-12 single-blog__img">
+              <video id="panorama-video" autoplay loop>
+                <source src="assets/img/Batimovil/BATIMOBIL 3D.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+              </video>
             </div>
           </div>
         </div>
@@ -76,6 +68,24 @@
   </section>
   <!-- Blog content section end -->
 
+  <script>
+  const videoElement = document.getElementById('panorama-video');
+  const seekBar = document.getElementById('seek-bar');
+
+  videoElement.addEventListener('timeupdate', () => {
+    const currentTime = videoElement.currentTime;
+    const duration = videoElement.duration;
+    const progress = (currentTime / duration) * 100;
+    seekBar.value = progress;
+  });
+
+  seekBar.addEventListener('input', () => {
+    const progress = seekBar.value;
+    const duration = videoElement.duration;
+    const newTime = (progress / 100) * duration;
+    videoElement.currentTime = newTime;
+  });
+  </script>
 
   <footer class="container-fluid p-0 pr-0">
     <div class="row mr-0 ml-0">

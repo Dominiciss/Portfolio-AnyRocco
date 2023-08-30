@@ -930,3 +930,15 @@ footer {
   width: calc(33.33% - 15px); /* Ajusta el ancho según el diseño deseado */
   margin-bottom: 30px;
 }
+
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#seek-bar {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
