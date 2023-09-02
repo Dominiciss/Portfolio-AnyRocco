@@ -769,14 +769,20 @@ footer {
   footer iframe {
     height: 100%;
     width: 100%; }
-  footer .contact-form {
+  footer .contact-form 
+  {
     border-radius: 25px;
     padding: 35px;
     background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 380px;
-    margin: 117px auto; }
+    /* max-width: 380px; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 110px;
+  }
+    /* margin: 117px auto; } */
     footer .contact-form h3 {
       color: #e90e65;
       font-size: 20px;
@@ -941,4 +947,12 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 10px;
+}
+
+.contact-image img {
+  width: 90%; /* Cambia este valor según el porcentaje deseado */
+  height: auto; /* Para mantener la proporción original */
+  text-align: center; /* Centrar la imagen horizontalmente */
+  margin-top: 160px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+  margin-left: 80px;
 }
