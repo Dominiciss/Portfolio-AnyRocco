@@ -956,3 +956,24 @@ footer {
   margin-top: 160px; /* Ajusta la distancia desde la parte superior según tus necesidades */
   margin-left: 80px;
 }
+
+.fa-linkedin
+{
+  color: #e90e65;
+  transform: scale(1.6);
+}
+.fa-instagram
+{
+  color: #e90e65;
+  transform: scale(1.6);
+}
+.fa-envelope
+{
+  color: #e90e65;
+  transform: scale(1.6);
+}
+.fa-whatsapp
+{
+  color: #e90e65;
+  transform: scale(1.6);
+}
