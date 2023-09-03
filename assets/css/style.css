@@ -943,6 +943,12 @@ footer {
   height: 100vh;
 }
 
+#video-container2 {
+  position: relative;
+  width: 60%;
+  height: 100vh;
+}
+
 #seek-bar {
   width: 100%;
   position: absolute;
