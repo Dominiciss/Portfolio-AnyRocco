@@ -983,3 +983,51 @@ footer {
   color: #e90e65;
   transform: scale(1.6);
 }
+
+
+
+/* Estilo del visor de imágenes */
+.image-viewer {
+  width: 1366px; /* Tamaño fijo del visor */
+  height: 768px; /* Tamaño fijo del visor */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-viewer img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+/* Estilo de la navegación */
+.image-navigation {
+  position: absolute;
+  top: 0;
+  left: 0; /* Dejar el botón de "Anterior" a la izquierda */
+  bottom: 0;
+  width: 40px; /* Ancho de los botones de navegación */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-navigation-right {
+  right: 0; /* Mover el botón de "Siguiente" a la derecha */
+  left: auto;
+}
+
+.image-navigation button {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 50px; /* Ancho más grande para los botones */
+  height: 50px; /* Alto más grande para los botones */
+  font-size: 24px; /* Tamaño de fuente más grande */
+  cursor: pointer;
+}
+
+.image-navigation button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
