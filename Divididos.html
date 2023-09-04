@@ -81,40 +81,63 @@
   </section>
 
   <script>
-  const images = document.querySelectorAll('.single-blog__img img');
-  const prevButton = document.querySelector('.prev-image');
-  const nextButton = document.querySelector('.next-image');
-  let currentIndex = 0;
-
-  // Función para mostrar la imagen actual
-  function showImage(index) {
-    images.forEach((image, i) => {
-      if (i === index) {
-        image.style.display = 'block';
-      } else {
-        image.style.display = 'none';
-      }
+    // Configura el tiempo en milisegundos entre cada cambio de imagen
+    const tiempoEntreImagenes = 5000; // 5 segundos
+  
+    // Selecciona las imágenes y botones de navegación
+    const images = document.querySelectorAll('.image-viewer img');
+    const prevButton = document.querySelector('.prev-image');
+    const nextButton = document.querySelector('.next-image');
+  
+    // Variable para rastrear la imagen actual
+    let currentIndex = 0;
+  
+    // Función para mostrar una imagen específica
+    function mostrarImagen(index) {
+      // Oculta todas las imágenes
+      images.forEach((img) => (img.style.display = 'none'));
+  
+      // Muestra la imagen actual
+      images[index].style.display = 'block';
+    }
+  
+    // Función para mostrar la siguiente imagen
+    function siguienteImagen() {
+      currentIndex = (currentIndex + 1) % images.length;
+      mostrarImagen(currentIndex);
+    }
+  
+    // Función para mostrar la imagen anterior
+    function imagenAnterior() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      mostrarImagen(currentIndex);
+    }
+  
+    // Mostrar la primera imagen al cargar la página
+    mostrarImagen(currentIndex);
+  
+    // Agrega eventos a los botones de navegación
+    prevButton.addEventListener('click', imagenAnterior);
+    nextButton.addEventListener('click', siguienteImagen);
+  
+    // Función para cambiar automáticamente de imagen
+    function cambiarImagenAutomaticamente() {
+      siguienteImagen();
+    }
+  
+    // Iniciar el cambio automático de imágenes
+    let intervalId = setInterval(cambiarImagenAutomaticamente, tiempoEntreImagenes);
+  
+    // Detener el cambio automático al interactuar con los botones
+    prevButton.addEventListener('click', () => {
+      clearInterval(intervalId);
+      intervalId = setInterval(cambiarImagenAutomaticamente, tiempoEntreImagenes);
     });
-  }
-
-  // Función para mostrar la imagen anterior
-  function showPrevImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(currentIndex);
-  }
-
-  // Función para mostrar la siguiente imagen
-  function showNextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
-  }
-
-  // Agregar eventos a los botones de navegación
-  prevButton.addEventListener('click', showPrevImage);
-  nextButton.addEventListener('click', showNextImage);
-
-  // Mostrar la primera imagen al cargar la página
-  showImage(currentIndex);
+  
+    nextButton.addEventListener('click', () => {
+      clearInterval(intervalId);
+      intervalId = setInterval(cambiarImagenAutomaticamente, tiempoEntreImagenes);
+    });
   </script>
 
   <footer class="container-fluid p-0 pr-0">

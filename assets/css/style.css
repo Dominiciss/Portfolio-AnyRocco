@@ -999,6 +999,8 @@ footer {
   height: 100%;
   display: none;
   object-fit: cover;
+  opacity: 1;
+  transition: opacity 0s; /* Configura la animación de opacidad */
 }
 
 /* Estilo de la navegación */
@@ -1031,3 +1033,5 @@ footer {
 .image-navigation button:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+
+
