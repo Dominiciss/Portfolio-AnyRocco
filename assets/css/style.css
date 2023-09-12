@@ -779,8 +779,8 @@ footer {
     /* max-width: 380px; */
     margin-right: auto;
     margin-left: auto;
-    margin-top: 0px;
-    margin-bottom: 110px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
     /* margin: 117px auto; } */
     footer .contact-form h3 {
@@ -960,7 +960,7 @@ footer {
   width: 90%; /* Cambia este valor según el porcentaje deseado */
   height: auto; /* Para mantener la proporción original */
   text-align: center; /* Centrar la imagen horizontalmente */
-  margin-top: 160px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+  margin-top: 200px; /* Ajusta la distancia desde la parte superior según tus necesidades */
   margin-left: 80px;
 }
 
