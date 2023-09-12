@@ -12,6 +12,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+  <link href="assets/themes/fantasy/index.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>  
+
   <title>Quixotes</title>
 </head>
 
@@ -48,23 +53,37 @@
               <br>My responsibilities extended to various aspects of the project, including hair testing, 360-degree renders, and camera layout positioning testing. These tasks required meticulous attention to detail and a deep understanding of 3D animation techniques.</p>
             </div>
           </div>
-          <div class="row single-blog">
+          <div class="row single-blog" style="margin-left: 0px;">
             <div class="col-xl-12 col-lg-12 single-blog__img">
-              <div id="model-container"></div>
-              <video id="panorama-video" controls width="1280" height="720">
-                <source src="assets/img/Quixote/SEC_210_The_Rescue_Friend.mp4" type="video/mp4">
-                Tu navegador no admite el elemento de video.
-              </video>
-            </div>
-            <div class="row single-blog">
-              <div class="col-xl-12 col-lg-12 single-blog__img">
                 <div id="model-container"></div>
-                <video id="panorama-video" controls width="1280" height="720">
-                  <source src="assets/img/Quixote/y2mate.com - QUIXOTES The Heirs Of La Mancha Trailer 2022_1080p.mp4" type="video/mp4">
-                  Tu navegador no admite el elemento de video.
+                <video
+                    id="panorama-video"
+                    class="video-js vjs-theme-fantasy"
+                    controls
+                    width="1366"
+                    height="768"
+                    data-setup='{}'
+                >
+                    <source src="assets/img/Quixote/y2mate.com - QUIXOTES The Heirs Of La Mancha Trailer 2022_1080p.mp4" type="video/mp4">
+                    Tu navegador no admite el elemento de video.
                 </video>
+            </div>
+            <div class="row single-blog" style="margin-left: 0px;">
+              <div class="col-xl-12 col-lg-12 single-blog__img">
+                  <div id="model-container"></div>
+                  <video
+                      id="panorama-video"
+                      class="video-js vjs-theme-fantasy"
+                      controls
+                      width="1366"
+                      height="768"
+                      data-setup='{}'
+                  >
+                      <source src="assets/img/Quixote/SEC_210_The_Rescue_Friend.mp4" type="video/mp4">
+                      Tu navegador no admite el elemento de video.
+                  </video>
               </div>
-          </div>
+          </div>          
         </div>
       </div>
     </div>
