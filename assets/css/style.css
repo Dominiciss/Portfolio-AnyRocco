@@ -1033,4 +1033,7 @@ footer {
   background: rgba(0, 0, 0, 0.7);
 }
 
-
+video {
+  max-width: 100%;
+  height: auto; /* Esto mantiene la proporción de aspecto original */
+}
