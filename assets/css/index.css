@@ -1,0 +1,573 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header>nav {
+    background: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+header>nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header>nav ul>li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+header>nav ul>li>a {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text);
+    user-select: none;
+    transition: color .4s ease-in-out;
+}
+
+header>nav ul>li>a::before {
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: .5px;
+    transition: background .4s ease-in-out;
+}
+
+header>nav ul>li>a:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+@keyframes slide-in {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+header>nav ul>li>a:hover::before {
+    background: var(--primary);
+    animation: slide-in .4s ease-in-out 0s 1 normal forwards;
+}
+
+header>nav ul>li>a.out::before {
+    animation: slide-out .4s ease-in-out 0s 1 normal forwards;
+}
+
+main .main-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-section video {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+main .main-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+main .main-section>div {
+    position: absolute;
+}
+
+main .main-section>div>h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--text);
+    user-select: none;
+}
+
+main .main-section>div>a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    transition: transform .4s ease-in-out;
+}
+
+main .main-section>div>a:hover {
+    transform: scale(95%);
+}
+
+main .main-section>div>a>svg {
+    pointer-events: none;
+    border-radius: 2rem;
+    transition: background ease-in-out .4s;
+}
+
+main .main-section>div>a:hover>svg {
+    background: rgb(255, 255, 255, 0.2);
+}
+
+main .main-section>div>a>span {
+    position: absolute;
+    pointer-events: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: var(--text);
+    user-select: none;
+}
+
+main .about-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+main .about-section>.images {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+main .about-section>.images>img {
+    width: 50%;
+    z-index: -1;
+}
+
+main .about-section>.card {
+    position: absolute;
+    display: flex;
+    height: 50vh;
+    width: 50%;
+    border-radius: 2rem;
+    background: var(--text);
+}
+
+main .about-section>.card>img {
+    height: 50vh;
+    width: 50%;
+    border-radius: 2rem 0 0 2rem;
+}
+
+main .about-section>.card>div {
+    height: 50vh;
+    width: 50%;
+    padding: 2.5rem 2rem;
+}
+
+main .about-section>.card>div>h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: rgb(61, 61, 61);
+}
+
+main .about-section>.card>div>h4 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    font-size: .85rem;
+    color: rgb(61, 61, 61);
+}
+
+main .about-section>.card>div>.divider {
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--primary);
+    margin: .5rem 0;
+}
+
+main .about-section>.card>div>p {
+    padding: 0 1rem 0 0;
+    font-size: .9rem;
+    color: rgb(71, 71, 71);
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 20px;
+}
+
+main .about-section>.card>div>.button-container {
+    display: flex;
+    margin: 2rem 0 1rem 0;
+}
+
+@media (max-width: 600px) {
+    main .about-section>.card>div>.button-container {
+        flex-direction: column;
+    }
+}
+
+main .about-section>.card>div>.button-container>a {
+    background: var(--primary);
+    text-decoration: none;
+    color: var(--text);
+    padding: .75rem 2rem;
+    border-radius: 2rem;
+    font-size: .9rem;
+    margin: 0 1rem;
+    transition: transform .4s ease-in-out, color .4s ease-in-out;
+}
+
+main .about-section>.card>div>.button-container>a:hover {
+    transform: scale(95%);
+    color: var(--background);
+}
+
+main .about-section>.pink {
+    height: 30vh;
+    width: 100%;
+    z-index: -1;
+    background: var(--primary);
+}
+
+main .portfolio-section {
+    padding: 5rem 10%;
+    background: #ffd1d8;
+}
+
+main .portfolio-section>h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+main .portfolio-section>.divider {
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background: var(--primary);
+    margin: .5rem 0;
+}
+
+main .portfolio-section>h3 {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+main .portfolio-section>div {
+    display: grid;
+    margin: 0 1rem;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+}
+
+@media (max-width: 1210px) {
+    main .portfolio-section>div {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (max-width: 910px) {
+    main .portfolio-section>div {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 610px) {
+    main .portfolio-section>div {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+main .portfolio-section>div>.card {
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 15em;
+    border-radius: 2rem;
+    opacity: 1;
+    margin: .85rem;
+    transform: scale(95%);
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+main .portfolio-section>div>.card:hover {
+    transform: scale(100%);
+}
+
+main .portfolio-section>div>.card.link:hover {
+    cursor: pointer;
+}
+
+@keyframes card-slide {
+    0% {
+        height: 25%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+main .portfolio-section>div>.card:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-radius: 2rem;
+    background: linear-gradient(transparent, var(--primary));
+    animation: card-slide .4s ease-in-out 0s 1 normal forwards;
+}
+
+main .portfolio-section>div:has(.card:hover) .card:not(.card:hover) {
+    opacity: .9;
+    transform: scale(92.5%);
+}
+
+main .portfolio-section>div>.card>img {
+    border-radius: 2rem;
+}
+
+main .portfolio-section>div>.card>.bottom-text {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    padding: .25rem .5rem;
+    border-radius: 0 0 2rem 2rem;
+    z-index: 1;
+    transition: opacity .4s ease-in-out;
+}
+
+main .portfolio-section>div>.card>.bottom-text>h5 {
+    color: var(--text);
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
+}
+
+main .portfolio-section>div>.card>.bottom-text>p {
+    color: var(--text);
+    opacity: .8;
+    font-size: 1rem;
+    padding: 0 .5rem;
+}
+
+main .portfolio-section>div>.card>.bottom-text>svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    color: var(--text);
+    pointer-events: none;
+}
+
+main .portfolio-section>div>.card:hover>.bottom-text {
+    opacity: 1;
+}
+
+main .portfolio-section>div>.card:hover>.information[hidden] {
+    display: none;
+}
+
+body:has(.window:not(.window[hidden])) {
+    overflow: hidden;
+}
+
+main .window {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .4s ease-in-out;
+}
+
+main .window[hidden] {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+main .window[hidden]>div {
+    transform: scale(0%);
+}
+
+main .window>div {
+    width: 80%;
+    height: 90%;
+    background: var(--text);
+    padding: 2rem 4rem;
+    border-radius: 2rem 0 0 2rem;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    transform: 100%;
+    transition: transform .4s ease-in-out;
+}
+
+main .window>div::-webkit-scrollbar {
+    width: 10px;
+}
+main .window>div::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+main .window>div::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+main .window .exit {
+    color: var(--background);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    transition: color .4s ease-in-out;
+}
+
+main .window .exit:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+main .window .exit svg {
+    width: 3em;
+    height: 3em;
+    pointer-events: none;
+}
+
+main .window .exit svg path {
+    pointer-events: none;
+}
+
+main .window>div>h3 {
+    font-size: 2.5rem;
+}
+
+main .window>div>span {
+    display: block;
+}
+
+main .window>div>span>p {
+    font-size: 1rem;
+    display: flex;
+    text-align: justify;
+    margin: .5rem 2rem;
+    text-indent: 25px;
+}
+
+main .window>div>.wrapper {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    align-self: center;
+    flex-shrink: 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+main .window>div>.wrapper>.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0%);
+    transition: transform .4s ease-in-out;
+}
+
+main .window>div>.wrapper>.carousel>img {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: scale-down;
+}
+
+main .window>div>.wrapper>.arrow {
+    position: absolute;
+    padding: auto 0;
+    margin: 0 .5rem;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+main .window>div>.wrapper>.arrow[disabled] {
+    pointer-events: none;
+    opacity: 0;
+}
+
+main .window>div>.wrapper>.arrow:hover {
+    cursor: pointer;
+    transform: scale(90%);
+}
+
+main .window>div>.wrapper>.arrow>svg {
+    width: 2em;
+    height: 2em;
+    pointer-events: none;
+}
+
+main .window>div>.wrapper>.arrow>svg path {
+    pointer-events: none;
+}
+
+main .window>div>.wrapper>.left.arrow {
+    left: 0;
+}
+
+main .window>div>.wrapper>.right.arrow {
+    right: 0;
+}
+
+main .window>div .animation {
+    margin: 1rem 0;
+}
+
+main .window>div video {
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+}

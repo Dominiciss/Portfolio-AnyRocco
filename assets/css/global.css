@@ -1,0 +1,12 @@
+:root {
+    --background: black;
+    --primary: #e90e65;
+    --text: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+}

@@ -1,542 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <script src="assets/js/ScrollAnimation.js"></script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>AnnieRoccoArt - 3D and 2D Artist</title>
-  <meta name="description" content="AnnieRoccoArt is the portfolio of Anabella Rocco, a talented 3D/2D artist and specializing in environments. Explore her work at annieroccoart.com.ar.">
-  <meta name="keywords" content="annieroccoart, Anabella Rocco, Artista 3D, Artist 3D, Artista 2D, Artist 2D, environment, annierocco, annieart">
+  <meta name="description"
+    content="AnnieRoccoArt is the portfolio of Anabella Rocco, a talented 3D/2D artist and specializing in environments. Explore her work at annieroccoart.com.ar.">
+  <meta name="keywords"
+    content="annieroccoart, Anabella Rocco, Artista 3D, Artist 3D, Artista 2D, Artist 2D, environment, annierocco, annieart">
   <meta name="author" content="Anabella Rocco">
-
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md  fixed-top maine-menu">
-    <div class="container">
-      <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
-      <div id="my-nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto">
-          <!--<<li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>-->
-          <li class="nav-item"> <a class="nav-link" href="#about">About</a></li>
-          <!--<li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Activity</a></li>-->
-          <li class="nav-item"> <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a></li>
-          <!--<li class="nav-item"> <a class="nav-link" href="#testimonial" tabindex="-1" aria-disabled="true">Testimonial</a></li>-->
-          <!--<li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li>-->
-          <li class="nav-item"> <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container-fluid fh5co-home-banner">
-    <div class="card"> <!--<img class="card-img" src="assets/img/banner-img.jpg" alt="">-->
-      <video autoplay muted loop id="myVideo">
+  <header>
+    <nav>
+      <ul>
+        <!--<li> <a href="#">Home</a> </li>-->
+        <li> <a href="#about">About</a></li>
+        <!--li> <a href="#activity" tabindex="-1" aria-disabled="true">Activity</a></li>-->
+        <li> <a href="#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a>
+        </li>
+        <!--li> <a href="#testimonial" tabindex="-1" aria-disabled="true">Testimonial</a></li>-->
+        <!--li> <a href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li>-->
+        <li> <a href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-section">
+      <video autoplay muted loop disablepictureinpicture>
         <source src="assets/img/demo2.webm" type="video/mp4">
       </video>
-      <div class="card-img-overlay">
-        <div class="center-text">
-          <h2 class="card-title">Anabella Rocco</h2>
-          <a href="#about" class="btn">
-            <svg width="201" height="51" viewBox="0 0 201 51">
-              <defs>
-                <style>
+      <div>
+        <h2>Anabella Rocco</h2>
+        <a href="#about">
+          <svg width="201" height="51" viewBox="0 0 201 51">
+            <defs>
+              <style>
                 .cls-1 {
                   fill: none;
                   stroke-width: 1px;
                   stroke: url(#linear-gradient);
                 }
               </style>
-              <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#e90e65"/>
-                <stop offset="1" stop-color="#fff"/>
+              <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#e90e65" />
+                <stop offset="1" stop-color="#fff" />
               </linearGradient>
             </defs>
-            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
+            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200"
+              height="50" rx="25" ry="25" />
           </svg>
-        About Me</a> </div>
+          <span>About Me</span>
+        </a>
       </div>
-    </div>
-  </div>
-  <div class="container-fluid fh5co-two-img">
-    <div class="row">
-      <div class="col-sm-6 pr-0 pl-0">
-        <div class="card"> <img class="card-img" src="assets/img/portada2.jpg" alt="">
-          <div class="card-img-overlay"> </div>
-        </div>
+    </section>
+    <section class="about-section" id="about">
+      <div class="images">
+        <img src="assets/img/portada2.jpg" alt="">
+        <img src="assets/img/portada3.jpg" alt="">
       </div>
-      <div class="col-sm-6 pr-0 pl-0">
-        <div class="card"> <img class="card-img" src="assets/img/portada3.jpg" alt="">
-          <div class="card-img-overlay"> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid fh5co-recent-work">
-    <div class="container contact-pop">
-      <div class="row">
-        <div class="col-md-6  pr-0">
-          <div class="card"> <img class="card-img w-100" src="assets/img/Anny.jpg" alt="" style="height: 460px;">
-            <div class="card-img-overlay"> </div>
-          </div>
-        </div>
-        <div class="col-md-6 pl-0" id="about">
-          <div class="content">
-            <h3>Hi! I´m ANABELLA ROCCO</h3>
-            <h4>3D Modeling, Environment Design, 2D Art and Concept Artistry.</h4>
-            <hr />
-            <p>I consider my self a High level Artist, creative, enthusiastic and professional with a mastery in the latest technologies and design tools. I´m specialized in environment and and prop modeling/texturing/surfacing. Can manage the complete process from 3D blocking to 3D sculpt, 3D modeling, importing in Game Engines, UV layout, texture shading, baking, lighting and final rendering.</p>
-            <div class="button-container">
-              <a href="#contact" class="btn">CONTACT</a>
-              <a href="https://drive.google.com/uc?export=download&id=1u-PYzAMUdgNc9BLAqaYVhSzNxpY33Qv2" class="btn">Download CV</a>
+      <div class="card">
+        <img src="assets/img/Anny.jpg" alt="">
+        <div>
+          <h3>Hi! I'm ANABELLA ROCCO</h3>
+          <h4>3D Modeling, Environment Design, 2D Art and Concept Artistry.</h4>
+          <div class="divider"></div>
+          <p>
+            I consider myself a <b>high-level artist</b>, creative, enthusiastic and professional with a mastery in the
+            latest technologies and design tools.
+          </p>
+          <br>
+          <p>
+            I'm specialized in <b>environment</b> and <b>prop</b>
+            modeling/texturing/surfacing.
+          </p>
+          <br>
+          <p>
+            I can manage the <b>complete process</b> from 3D blocking to 3D sculpt, 3D modeling,
+            importing in Game Engines, UV layout, texture shading, baking, lighting and final rendering.
+          </p>
+          <div class="button-container">
+            <a href="#contact" class="btn">CONTACT</a>
+            <a href="https://drive.google.com/uc?export=download&id=1u-PYzAMUdgNc9BLAqaYVhSzNxpY33Qv2"
+              class="btn">Download CV</a>
           </div>
         </div>
       </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio -->
-  <div class="container-fluid recent fh5co-portfolio" id="portfolio">
-    <div class="container">
+      <div class="pink"></div>
+    </section>
+    <section class="portfolio-section" id="portfolio">
       <h2>Portfolios</h2>
-      <div class="category-3d-modeling"></div><h2>3D Modeling</h2>
-        <div class="row gallery-row">
-          <div>
-            <div class="card"> 
-              <a href="Batman.html">
-              <img class="card-img2" src="assets/img/anabella-rocco-batimo.jpg" alt="">
-              <div class="card-img-overlay">
-                <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Batmobile</h5>
-                  <p class="card-text">Personal Project</p>
-                </div>
-              </div>
-              </a>
+      <div class="divider"></div>
+      <h3>3D Modeling</h3>
+      <div class="3d-modeling">
+        <a class="card link">
+          <img src="assets/img/anabella-rocco-batimo.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Batmobile</h5>
+            <p class="text">Personal Project</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72" />
+            </svg>
+          </div>
+          <div class="information" hidden>
+            <span class="description">
+              <p>The iconic Batmobile has been modelled in detail using Maya modelling software.
+                Precise shapes and characteristic details have been created, capturing the essence of this iconic
+                vehicle.
+                Once the modelling was complete, Pixar's RenderMan rendering engine was used to generate the final
+                image.</p>
+            </span>
+            <div class="images">
+              <span>/assets/img/Batimovil/BATIMOVIL.jpg</span>
+              <span>/assets/img/Batimovil/BATIMOVIL2.jpg</span>
+            </div>
+            <div class="videos">
+              <span behaviour="automatic">assets/img/Batimovil/BATIMOBIL 3D.mp4</span>
             </div>
           </div>
-          <div>
-            <div class="card"> <a href="Quixote.html"> <img class="card-img2" src="assets/img/anabella-rocco-QUIXOTES.jpg" alt="">
-              <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Quixotes</h5>
-                  <p class="card-text">GGVFX</p>
-                </div>
-              </div>
-              </a>
+        </a>
+        <a class="card link">
+          <img src="assets/img/anabella-rocco-QUIXOTES.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Quixotes</h5>
+            <p class="text">GGVFX</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72" />
+            </svg>
+          </div>
+          <div class="information" hidden>
+            <span class="description">
+              <p>I was involved in the technical correction of 3D Characters, Sets, and SHOTGRID
+                Management for our project, which was created using Maya, a leading 3D animation software. This project
+                was a remarkable international collaboration, as it was a co-production involving other prestigious
+                studios from Germany and Spain. </p>
+              <p>My responsibilities extended to various aspects of the project, including hair testing, 360-degree
+                renders, and camera layout positioning testing. These tasks required meticulous attention to detail and
+                a deep understanding of 3D animation techniques.</p>
+            </span>
+            <div class="videos">
+              <span behaviour="manual">
+                assets/img/Quixote/y2mate.com - QUIXOTES The Heirs Of La Mancha Trailer 2022_1080p.mp4
+              </span>
+              <span behaviour="manual">assets/img/Quixote/SEC_210_The_Rescue_Friend.mp4</span>
             </div>
           </div>
-          <div>
-            <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Conejo.jpg" alt="">
-              <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Story Board</h5>
-                  <p class="card-text">Persoanl Project</p>
-                </div>
-              </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Conejo.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Story Board</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Tortuga.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Environment 3D/2D</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Nave.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Modeling 3D</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Nino.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Animations 3D/2D</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Torino.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Story Board</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Personaje.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Environment 3D/2D</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+      </div>
+      <div class="divider"></div>
+      <h3>3D Environment</h3>
+      <div class="3d-environment">
+        <a class="card link">
+          <img src="assets/img/anabella-rocco-Divididos.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Divididos San Saltarín Video Clip</h5>
+            <p class="text">Cacodelphia</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72" />
+            </svg>
+          </div>
+          <div class="information" hidden>
+            <span class="description">
+              <p>One of my notable projects includes the creation of captivating environments and props for the music
+                video "DIVIDIDOS," where I meticulously designed every element to immerse viewers in a surreal and
+                visually stunning experience. This project allowed me to demonstrate my ability to blend creativity with
+                technical precision, resulting in a seamless integration of 3D artistry into the video's narrative.</p>
+            </span>
+            <div class="images">
+              <span>/assets/img/Divididos/A.png</span>
+              <span>/assets/img/Divididos/b.png</span>
+              <span>/assets/img/Divididos/f.png</span>
+              <span>/assets/img/Divididos/C.png</span>
+              <span>/assets/img/Divididos/AA.png</span>
+              <span>/assets/img/Divididos/HighresScreenshot00013.png</span>
+            </div>
+            <div class="videos">
+              <span behaviour="manual">/assets/img/Divididos/Divididos San Saltarín (Video Oficial).webm</span>
             </div>
           </div>
-          <div>
-            <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Tortuga.jpg" alt="">
-              <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Environment 3D/2D</h5>
-                  <p class="card-text">Persoanl Project</p>
-                </div>
-              </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Citymudos.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Citymudos</h5>
+            <p class="text">Cacodelphia</p>
+          </div>
+        </a>
+        <a class="card link">
+          <img src="assets/img/anabella-rocco-Mercadolibre.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Mercadolibre</h5>
+            <p class="text">Cacodelphia</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72" />
+            </svg>
+          </div>
+          <div class="information" hidden>
+            <span class="description">
+              <p>Development of captivating product showcases and visuals for a prominent Mercado Libre advertising
+                campaign. I painstakingly crafted each element to ensnare viewers in a visually striking and immersive
+                experience. This endeavor provided me with the platform to showcase my ability to seamlessly blend
+                imaginative creativity with technical expertise, resulting in a flawless integration of 3D artistry into
+                the heart of Mercado Libre's advertising narrative.</p>
+            </span>
+            <div class="videos">
+              <span behaviour="automatic">/assets/img/Mercadolibre/MERCADOLIBRE.mp4</span>
+              <span behaviour="manual">
+                /assets/img/Mercadolibre/Publicidad de Natalia Oreiro para Mercado Libre.mp4
+              </span>
             </div>
           </div>
-          <div>
-            <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Nave.jpg" alt="">
-              <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Modeling 3D</h5>
-                  <p class="card-text">Persoanl Project</p>
-                </div>
-              </div>
+        </a>
+        <a class="card link">
+          <img src="assets/img/anabella-rocco-Volkswagen.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Volkswagen</h5>
+            <p class="text">Cacodelphia</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72" />
+            </svg>
+          </div>
+          <div class="information" hidden>
+            <span class="description">
+              <p>Visually stunning scenes and aesthetics for a Volkswagen car commercial. With meticulous attention to
+                detail, I designed every aspect to captivate the audience, offering a breathtaking and immersive
+                experience. This project allowed me to showcase my talent for seamlessly combining artistic creativity
+                with technical precision, resulting in a flawless integration of automotive excellence into the heart
+                of Volkswagen's advertising narrative.</p>
+            </span>
+            <div class="images">
+              <span>/assets/img/Volkswagen/HighresScreenshot00007.png</span>
+            </div>
+            <div class="videos">
+              <span behaviour="manual">
+                /assets/img/Volkswagen/Novo Virtus - A sua próxima grande escolha - VW Brasil.mp4</span>
             </div>
           </div>
-          <div>
-            <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Nino.jpg" alt="">
-              <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Animations 3D/2d</h5>
-                  <p class="card-text">Persoanl Project</p>
-                </div>
-              </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Mendoza.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Mendoza</h5>
+            <p class="text">Cacodelphia</p>
+          </div>
+        </a>
+        <a class="card">
+          <img class="card-img2" src="assets/img/ref4.PNG" alt="">
+          <div class="bottom-text">
+            <h5 class="card-title">Bariloche</h5>
+            <p class="card-text">Cacodelphia</p>
+          </div>
+        </a>
+      </div>
+      <div class="divider"></div>
+      <h3>2D Art</h3>
+      <div class="2d-art">
+        <a class="card link">
+          <img src="assets/img/anabella-rocco-Zamba.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Los Asombrosos Viajes de Zamba y Nina por la Argentina</h5>
+            <p class="text">TV Publica</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48M336 64h112v112M224 288L440 72" />
+            </svg>
+          </div>
+          <div class="information" hidden>
+            <span class="description">
+              <p>My contribution was in the realm of 2D facial animations for 'Los asombrosos viajes de Zamba y Nina por
+                la Argentina,' a project aired on public television. I meticulously crafted expressive animations for
+                the characters' faces, enhancing the storytelling experience. This opportunity allowed me to demonstrate
+                my skill in bringing characters to life through intricate facial expressions, seamlessly integrating
+                this artistry into of the show's narrative on public television.</p>
+            </span>
+            <div class="images">
+              <span>/assets/img/Zamba/WhatsApp Image 2023-09-13 at 11.55.34.jpg</span>
+              <span>/assets/img/Zamba/zamba.jpg</span>
+              <span>/assets/img/Zamba/IMG_3286.webp</span>
+              <span>/assets/img/Divididos/C.png</span>
+              <span>/assets/img/Zamba/nina.jpg</span>
+            </div>
+            <div class="videos">
+              <span behaviour="manual">
+                /assets/img/Zamba/y2mate.is - Ya llegan los Asombrosos Viajes de Zamba y Nina por la Argentina.mp4
+              </span>
             </div>
           </div>
-          <div>
-            <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Torino.jpg" alt="">
-              <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Story Board</h5>
-                  <p class="card-text">Persoanl Project</p>
-                </div>
-              </div>
-            </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Videojuego.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Modeling 3D</h5>
+            <p class="text">Personal Project</p>
           </div>
-          <div>
-            <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Personaje.jpg" alt="">
-              <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                <div class="bottom-text">
-                  <h5 class="card-title">Environment 3D/2D</h5>
-                  <p class="card-text">Persoanl Project</p>
-                </div>
-              </div>
-            </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-cuarto.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Animations 3D/2d</h5>
+            <p class="text">Personal Project</p>
           </div>
-          <!--3D Environment-->
-          <div class="category-3d-modeling"></div><h2>3D Environment</h2>
-            <div class="row gallery-row">
-              <div>
-                <div class="card"> <a href="Divididos.html"> <img class="card-img2" src="assets/img/anabella-rocco-Divididos.jpg" alt="">
-                  <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                    <div class="bottom-text">
-                      <h5 class="card-title">Divididos San Saltarín Video Clip</h5>
-                      <p class="card-text">Cacodelphia</p>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Citymudos.jpg" alt="">
-                  <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                    <div class="bottom-text">
-                      <h5 class="card-title">Citymudos</h5>
-                      <p class="card-text">Cacodelphia</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="card"> <a href="Mercadolibre.html"> <img class="card-img2" src="assets/img/anabella-rocco-Mercadolibre.jpg" alt="">
-                  <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                    <div class="bottom-text">
-                      <h5 class="card-title">Mercadolibre</h5>
-                      <p class="card-text">Cacodelphia</p>
-                    </div>
-                  </div>
-                </a>
-                </div>
-              </div>
-              <div>
-                <div class="card"> <a href="Volkswagen.html"> <img class="card-img2" src="assets/img/anabella-rocco-Volkswagen.jpg" alt="">
-                  <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                    <div class="bottom-text">
-                      <h5 class="card-title">Volkswagen</h5>
-                      <p class="card-text">Cacodelphia</p>
-                    </div>
-                  </div>
-                </a>
-                </div>
-              </div>
-              <div>
-                <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Mendoza.jpg" alt="">
-                  <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                    <div class="bottom-text">
-                      <h5 class="card-title">Mendoza</h5>
-                      <p class="card-text">Cacodelphia</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="card"> <img class="card-img2" src="assets/img/ref4.PNG" alt="">
-                  <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                    <div class="bottom-text">
-                      <h5 class="card-title">Bariloche</h5>
-                      <p class="card-text">Cacodelphia</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              <div class="category-3d-modeling"></div><h2>2D Art</h2>
-              <div class="row gallery-row">
-                <div>
-                  <div class="card"> <a href="Zamba.html"> <img class="card-img2" src="assets/img/anabella-rocco-Zamba.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">los Asombrosos Viajes de Zamba y Nina por la Argentina</h5>
-                        <p class="card-text">TV Publica</p>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Videojuego.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Modeling 3D</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-cuarto.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Animations 3D/2d</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-gato.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Story Board</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-alice.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Environment 3D/2D</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-gatocama.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Modeling 3D</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-casa.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Animations 3D/2d</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-cuarto2.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Story Board</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-chica.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Environment 3D/2D</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-castle.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Castle</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-unicornio.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Unicornio</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-ardilla.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Ardilla</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-El Tio y El Sobrino.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">El Tio Y El Sobrino</h5>
-                        <p class="card-text">A24</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Rana.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Rana</h5>
-                        <p class="card-text">Persoanl Project</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Cocina.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Matu Chavero</h5>
-                        <p class="card-text">Matu Chavero</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card"> <img class="card-img2" src="assets/img/anabella-rocco-Medico.jpg" alt="">
-                    <div class="card-img-overlay"> <!--<a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>-->
-                      <div class="bottom-text">
-                        <h5 class="card-title">Suap</h5>
-                        <p class="card-text">Suap</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-gato.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Story Board</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-alice.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Environment 3D/2D</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-gatocama.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Modeling 3D</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-casa.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Animations 3D/2d</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-cuarto2.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Story Board</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-chica.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Environment 3D/2D</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-castle.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Castle</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-unicornio.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Unicornio</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-ardilla.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Ardilla</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-El Tio y El Sobrino.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">El Tio Y El Sobrino</h5>
+            <p class="text">A24</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Rana.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Rana</h5>
+            <p class="text">Personal Project</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Cocina.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Matu Chavero</h5>
+            <p class="text">Matu Chavero</p>
+          </div>
+        </a>
+        <a class="card">
+          <img src="assets/img/anabella-rocco-Medico.jpg" alt="">
+          <div class="bottom-text">
+            <h5 class="title">Suap</h5>
+            <p class="text">Suap</p>
+          </div>
+        </a>
+      </div>
+      <win class="window" hidden>
+        <div>
+        </div>
+      </win>
+    </section>
+  </main>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--  <div class="container-fluid fh5co-recent-work activity">
-    <div class="container recent">
-      <div class="row">
-        <h2>Activity of the month</h2>
-        <div class="owl-carousel owl-carousel3 owl-theme">
-          <div>
-            <div class="card"> <img class="card-img" src="assets/img/activity-img1.png" alt="">
-              <div class="card-img-overlay">
-                <div class="bottom-text">
-                  <h5 class="card-title">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
-                  <a href="#">Read more <img src="assets/img/double-right.svg" alt=""></a> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card"> <img class="card-img" src="assets/img/activity-img2.png"  alt="">
-              <div class="card-img-overlay">
-                <div class="bottom-text">
-                  <h5 class="card-title">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
-                  <a href="#">Read more <img src="assets/img/double-right.svg" alt=""></a> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card"> <img class="card-img" src="assets/img/activity-img3.png" alt="">
-              <div class="card-img-overlay">
-                <div class="bottom-text">
-                  <h5 class="card-title">Sed ut perspiciatis unde &nbsp; iste natus error sit volup</h5>
-                  <a href="#">Read more <img src="assets/img/double-right.svg" alt=""></a> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>-->
-<!--  <div class="container-fluid fh5co-about-me" id="testimonial">
-    <div id="my-carousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="card"> <img class="card-img d-block w-100" src="assets/img/about-me-img.jpg" alt="">
-          <div class="card-img-overlay">
-            <h2>People says about me</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption d-md-block"> <img src="assets/img/quote-icon.png" alt="">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-          </div>
-        </div>
-        <div class="carousel-item active">
-          <div class="carousel-caption d-md-block"> <img src="assets/img/quote-icon.png" alt="">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption d-md-block"> <img src="assets/img/quote-icon.png" alt="">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-          </div>
-        </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#my-carousel" data-slide-to="0" > <img src="assets/img/about-me-img1.png" alt=""> <span>Sherrie Rose</span> </li>
-        <li class="active" data-target="#my-carousel" data-slide-to="1" aria-current="location"> <img src="assets/img/about-me-img2.png" alt=""> <span>Sherrie Rose</span> </li>
-        <li data-target="#my-carousel" data-slide-to="2"> <img src="assets/img/about-me-img3.png" alt=""> <span>Sherrie Rose</span> </li>
-      </ol>
-    </div>
-  </div>-->
-<!--  <div class="container-fluid fh5co-insta-feed activity">
-    <div class="container recent">
-      <div class="row mb-5 pb-5">
-        <div class="col-lg-6">
-          <div class="twit-box">
-            <div class="media mb-3"> <img class="align-self-start mr-3 rounded-circle" src="assets/img/twit-girl-img.png" alt="">
-              <div class="media-body">
-                <h5 class="mb-0 mt-3">Sandra reigel</h5>
-                <p>@sandraphotography</p>
-              </div>
-            </div>
-            <p class="text-justify"> “Sed ut perspiciatis unde omnis iste nats error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut. </p>
-            <div class="clearfix"> <a href="#" class="btn btn-primary mt-2 float-right">Follow</a> </div>
-          </div>
-        </div>
-        <div class="col-lg-6 feed-caro">
-          <h2>Instagram feed</h2>
-          <div class="owl-carousel owl-carousel4 owl-theme">
-            <div>
-              <div class="card"> <img class="card-img" src="assets/img/feed-img1.png" alt="">
-                <div class="card-img-overlay"> </div>
-              </div>
-            </div>
-            <div>
-              <div class="card"> <img class="card-img" src="assets/img/feed-img2.png"  alt="">
-                <div class="card-img-overlay"> </div>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--<h2 class="text-center d-block">Find me on social media</h2>
+  <!--<h2 class="text-center d-block">Find me on social media</h2>
       <div class="row social-links">
         <ul class="nav mx-auto">
           <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/fh5co"><img src="assets/img/facebook.png" alt=""></a> </li>
@@ -556,41 +475,41 @@
         <div class="contact-form" id="contact">
           <h3 class="text-uppercase">Contact me</h3>
           <form action="https://formspree.io/f/xrgwkydw" method="POST">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-              <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
-              <button type="submit" class="form-control">Send</button>
-          </form>    
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+            <button type="submit" class="form-control">Send</button>
+          </form>
           <h2 class="text-center d-block"><br>me on social media</h2>
           <div class="row social-links">
             <ul class="nav mx-auto">
-              <li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/in/anabellarocco/" target="_blank"><i class="fab fa-linkedin"></i></a> </li>
-              <li class="nav-item"> <a class="nav-link" href="https://www.instagram.com/annieroccoart/" target="_blank"><i class="fab fa-instagram"></i></a> </li>
-              <li class="nav-item"> <a class="nav-link" href="mailto:annieroccoart@gmail.com" target="_blank"><i class="far fa-envelope"></i></a> </li>
-              <li class="nav-item"> <a class="nav-link" href="https://wa.me/+541154591997" target="_blank"><i class="fab fa-whatsapp"></i></a> </li>              
+              <li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/in/anabellarocco/"
+                  target="_blank"><i class="fab fa-linkedin"></i></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="https://www.instagram.com/annieroccoart/"
+                  target="_blank"><i class="fab fa-instagram"></i></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="mailto:annieroccoart@gmail.com" target="_blank"><i
+                    class="far fa-envelope"></i></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="https://wa.me/+541154591997" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a> </li>
             </ul>
           </div>
         </div>
       </div>
-      
+
       <!-- Columna para la imagen -->
       <div class="col-md-6" id="content-us">
         <div class="contact-image">
-          <img src="assets/img/contact.png" alt="Imagen de contacto">
+          <img src="assets/img/contact.png" alt="Imagen de contacto" width="10px">
         </div>
       </div>
     </div>
     <div class="copy pt-4 pb-4">
-      <p><a href="https://freehtml5.co/" target="_blank"> &copy; 2023 Any</a>  &nbsp;  |  &nbsp; Design by <a href="https://nachoidev2.com/" target="_blank">nachoidev2</a> &nbsp; | &nbsp;  All rights reserved</p>
+      <p><a href="https://freehtml5.co/" target="_blank"> &copy; 2023 Any</a> &nbsp; | &nbsp; Design by <a
+          href="https://nachoidev2.com/" target="_blank">nachoidev2</a> &nbsp; | &nbsp; All rights reserved</p>
     </div>
   </footer>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-  <script src="assets/js/jquery-3.3.1.slim.min.js"></script> 
-  <script src="assets/js/popper.min.js" ></script> 
-  <script src="assets/js/bootstrap.min.js"></script> 
-  <script src="assets/js/owl.carousel.min.js"></script> 
-  <script src="assets/js/main.js"></script>
-
+  <script src="./assets/js/index.js"></script>
 </body>
+
 </html>

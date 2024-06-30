@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
     
     // Configura la dirección de correo a la que se enviará el mensaje
-    $to = "peraltaignacio64@gmail.com";
+    $to = "manudominich34@gmail.com";
     
     // Configura el asunto y el contenido del correo
     $subject = "Mensaje de contacto de $name";
